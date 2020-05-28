@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+const mongoosePaginate = require('mongoose-paginate');
 
-const ProducSchema = new mongoose.Schema({
+const ProductSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true,
@@ -19,6 +20,7 @@ const ProducSchema = new mongoose.Schema({
     }
 })
 
+ProductSchema.plugin(mongoosePaginate);
 
-mongoose.model('Product', ProducSchema);
+mongoose.model('Product', ProductSchema);
 // Registra o model
