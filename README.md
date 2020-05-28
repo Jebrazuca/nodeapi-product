@@ -22,4 +22,4 @@ Exemplo de dados retornados:
 
 ![](/images/capture.png) 
 
-**__ Author: Jefferson da Silva __**
+**_Author: Jefferson da Silva_**
